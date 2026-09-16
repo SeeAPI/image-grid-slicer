@@ -8,7 +8,7 @@ A privacy-first, browser-based image grid slicer with uniform grids, draggable g
 
 Images are decoded, edited, and exported on the user's device. Image Grid Slicer has no upload service and does not send image data to SeeAPI or any third party.
 
-![Image Grid Slicer editor with a three-by-three image grid](https://raw.githubusercontent.com/SeeAPI/image-grid-slicer/main/docs/images/editor-overview.png)
+![Image Grid Slicer editor with a four-by-four sprite sheet](https://raw.githubusercontent.com/SeeAPI/image-grid-slicer/main/docs/images/editor-overview.png)
 
 [Live demo](https://seeapi.github.io/image-grid-slicer/) · [Core API](#core-api) · [React editor](#react-editor) · [Development](#development)
 
@@ -82,7 +82,7 @@ const slices = await sliceImage(file, {
 })
 ```
 
-![Mesh editing and exported image tiles](https://raw.githubusercontent.com/SeeAPI/image-grid-slicer/main/docs/images/mesh-results.png)
+![Mesh editing on a four-by-four sprite sheet](https://raw.githubusercontent.com/SeeAPI/image-grid-slicer/main/docs/images/mesh-results.png)
 
 > Mesh mode clips each cell to a four-sided polygon while preserving the source pixels in place. It does not perform perspective correction or stretch a quadrilateral into a rectangle.
 
@@ -97,7 +97,7 @@ npm run dev
 
 Then open `http://127.0.0.1:5173/image-grid-slicer/`.
 
-To reproduce the README examples, upload [`docs/images/sample-grid.png`](docs/images/sample-grid.png) and select the 3 × 3 preset. The corresponding SVG source is included alongside it for maintainers.
+For a sample input, upload [`docs/images/sample-grid.png`](docs/images/sample-grid.png) and select the 3 × 3 preset. The corresponding SVG source is included alongside it for maintainers.
 
 ## Core API
 
