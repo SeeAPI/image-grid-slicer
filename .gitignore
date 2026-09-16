@@ -1,0 +1,8 @@
+node_modules/
+dist/
+site-dist/
+*.tgz
+.DS_Store
+*.log
+.env*
+!.env.example
